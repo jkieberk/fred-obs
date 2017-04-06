@@ -9,28 +9,41 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="create.css" media="screen" />
   </head>
   <body>
     <div class="container">
-
-      <div class="span3">
-      <h2>Sign Up</h2>
-      <form>
-      <label>First Name</label>
-      <input type="text" name="firstname" class="span3">
-      <label>Last Name</label>
-      <input type="text" name="lastname" class="span3">
-      <label>Email Address</label>
-      <input type="email" name="email" class="span3">
-      <label>Username</label>
-      <input type="text" name="username" class="span3">
-      <label>Password</label>
-      <input type="password" name="password" class="span3">
-      <label><input type="checkbox" name="terms"> I agree with the <a href="#">Terms and Conditions</a>.</label>
-      <input type="submit" value="Sign up" class="btn btn-primary pull-right">
-      <div class="clearfix"></div>
-      </form>
-  </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+         <div class="row myborder">
+             <h4 style="color: #7EB59E; margin: initial; margin-bottom: 10px;">Sign Up Now</h4><hr>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+                <input size="60" maxlength="255" class="form-control" placeholder="User Name" name="UserRegistration[username]" id="UserRegistration_username" type="text">                                                        </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-lock mycolor"></i></span>
+                <input size="60" maxlength="255" class="form-control" placeholder="Password" name="UserRegistration[password]" id="UserRegistration_password" type="password">                                    </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+                <input size="60" maxlength="255" class="form-control" placeholder="First Name" name="UserRegistration[fname]" id="UserRegistration_fname" type="text">                                    </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+                <input size="60" maxlength="255" class="form-control" placeholder="Last Name" name="UserRegistration[lname]" id="UserRegistration_lname" type="text">                                    </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
+                <input size="60" maxlength="255" class="form-control" placeholder="Address" name="UserRegistration[address]" id="UserRegistration_address" type="text">                                    </div>
+            <div class="input-group margin-bottom-20">
+                <span class="input-group-addon"><i class="glyphicon glyphicon-phone mycolor"></i></span>
+                <input size="60" maxlength="255" class="form-control" placeholder="Contact Number" name="UserRegistration[contactnumber]" id="UserRegistration_contactnumber" type="text">                                    </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <button class="btn-u pull-left" type="submit">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+      </div>
 
     </div> <!-- /container -->
   </body>
