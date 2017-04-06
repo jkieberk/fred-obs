@@ -30,11 +30,9 @@
                 <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
                 <input size="60" maxlength="255" class="form-control" placeholder="Last Name" name="UserRegistration[lname]" id="UserRegistration_lname" type="text">                                    </div>
             <div class="input-group margin-bottom-20">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope mycolor"></i></span>
-                <input size="60" maxlength="255" class="form-control" placeholder="Address" name="UserRegistration[address]" id="UserRegistration_address" type="text">                                    </div>
-            <div class="input-group margin-bottom-20">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-phone mycolor"></i></span>
-                <input size="60" maxlength="255" class="form-control" placeholder="Contact Number" name="UserRegistration[contactnumber]" id="UserRegistration_contactnumber" type="text">                                    </div>
+                <span class="input-group-addon"><i class="glyphicon glyphicon-user mycolor"></i></span>
+                <input size="60" maxlength="255" class="form-control" placeholder="Age" name="UserRegistration[Age]" id="UserRegistration_age" type="text">                                    
+            </div>
             <div class="row">
                 <div class="col-md-12">
                     <button class="btn-u pull-left" type="submit">Sign Up</button>
