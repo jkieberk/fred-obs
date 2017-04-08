@@ -100,6 +100,7 @@ li.ui-state-default:last-child{
 }
 #checkAll{
   margin-top:10px;
+}
   </style>
 </html>
 
