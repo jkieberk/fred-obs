@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "restricted area"
+AuthUserFile /home/justin/dev/database_help/php-getting-started/web/.htpasswd
+require valid-user
