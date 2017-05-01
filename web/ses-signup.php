@@ -20,14 +20,14 @@
   oci_execute($sql);
 
   $sql = oci_parse($c, 'INSERT INTO ATTENDS(S_MONTH, S_DAY, S_YEAR, S_NUM, USER_ID)
-VALUES (:month, :day, :year, :num, :userid)');
+VALUES(:month, :day, :year, :num, :userid)');
 oci_bind_by_name($sql, ":month", $month);
 oci_bind_by_name($sql, ":day", $day);
 oci_bind_by_name($sql, ":year", $year);
 oci_bind_by_name($sql, ":num", $num);
 oci_bind_by_name($sql, ":userid", $userid);
-oci_execute($sql);
-
+$ret = oci_execute($sql);
+echo $year.' '.$month.' '.$day.' '.$userid;
   //echo $month.'/'.$day.'/'.$year.' '.$num;
 
 

@@ -11,6 +11,10 @@ else
     $err = oci_error();
     echo "Connection failed." . $err[text];
 }
+
+
+  $id = $_GET['id'];
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -34,17 +38,18 @@ else
            <span class="icon-bar"></span>
            <span class="icon-bar"></span>
          </button>
-         <a class="navbar-brand" href="/index.php">Fred Obs</a>
+         <a class="navbar-brand" href="/nav.php?id=<?php echo $id ?>">Fred Obs</a>
        </div>
        <div id="navbar" class="collapse navbar-collapse">
          <ul class="nav navbar-nav">
-           <li><a href="/index.php">Home</a></li>
-           <li><a href="#about">About</a></li>
-           <li class="active"><a href="/session-signup.php">Session Signup</a></li>
+           <li><a href="nav.php?id=<?php echo $id ?>">Home</a></li>
+           <li><a href="HTTP://BIT.LY/fredobs">About</a></li>
+           <li class="active"><a href="/session-signup.php?id=<?php echo $id ?>">Session Signup</a></li>
+          <li><a href="/admin.php?id=<?php echo $id ?>">Admin Tools</a></li>
          </ul>
        </div><!--/.nav-collapse -->
      </div>
-   </nav>
+    </nav>
 
 
     <div class="container">
@@ -96,11 +101,12 @@ else
 
 <script type="text/javascript">
 $( document ).ready(function() {
-  var userid = '<?php echo $_GET['userid'] ?>';
+  var userid = '<?php echo $_GET['id'] ?>';
   $('.signup').click(function(event){
     if(!$(event.target).hasClass('disabled'))
     {
     $.get( "ses-signup.php", { userid: userid, sessionid: event.target.id }, function( data ) {
+      alert('Signed Up!');
       $el = $(event.target).parent().parent().find('.attendance');
       var at = $el.html().split('/');
       var newAt = parseInt(at[0]) + 1;
